@@ -1,0 +1,22 @@
+$ cat > build.xml
+<project default="hello">
+  <target name="hello">
+    <javac srcdir="."
+           includeantruntime="false"
+           destdir="."/>
+  </target>
+</project>
+
+$ cat > Hello.java
+public class Hello {
+  public static void
+  main(String[] args) {
+    String msg = "Hello, World!";
+    System.out.println(msg);
+  }
+}
+
+$ ant
+
+$ java Hello
+Hello, World!
