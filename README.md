@@ -1,1 +1,1 @@
-# bulid scripts (MAKE and ANT)
+# bulid script
